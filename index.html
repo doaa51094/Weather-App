@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="bg-body">
+ <div class="big-container pt-5">
+  <nav class="navbar navbar-expand-lg   navbar-dark fixed-top ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand d-flex align-items-center " href="#">
+        <div class="logo  text-center">
+            <h1 class="fs-1 mb-0 ps-5">Weather</h1>
+        </div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-4">
+            <a class="nav-link px-4 active " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link px-4 " aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item me-4 ">
+            <a class="nav-link px-4 " aria-current="page" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item me-4 ">
+            <a class="nav-link px-4 " aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link px-4 " aria-current="page" href="#">Contact</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav> 
+  <div class="home">
+    <div class="container ">
+      <div class="row mt-5 ">
+        <div class="col-lg-12 mt-5">
+          <div class="input-group m-3 ">
+            <input type="text" class="input-bg rounded-1 p-3 form-control" placeholder="Find Your Location......" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary px-4 text-white" type="button" id="button-addon2" >  Find </button>
+          </div>
+          <p class="text-danger text-center fs-3" id="error"></p>
+          
+        </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-4">
+           <div class="about-wheather text-center " >
+             <div class="weather-header main-header p-3 rounded-1">
+               <div class="day" id="currentDay"></div>
+               <div class="d-flex"><div id="dateOfMonth"></div> <div id="date" class="px-1" ></div></div>
+             </div>
+             <div class="weather-content p-3 mt-3 rounded-1">
+               <div class="location  fs-2"> </div>
+               <div class="degree fs-1" id="maxTemp-today"></div>
+               <div><img src="img/113.webp" alt="" class="w-25"   id="icon1"></div>
+             <div class="custom-today"></div>
+             <span class="px-2"><img src="img/icon-umberella.png" alt=""> 20%</span>
+             <span class="px-2"><img src="img/icon-wind.png" alt=""> 18km/h</span>
+             <span class="px-2"><img src="img/icon-compass.png" alt=""> East</span>
+             </div>
+             
+           </div>
+         </div>
+         <div class="col-lg-4">
+           <div class="about-wheather text-center ">
+             <div class="weather-header middle-header p-3 rounded-1 ">
+               <div class="day" id="secondDay"></div>
+             </div>
+             <div class="weather-content middle-content p-3 mt-3 rounded-1">
+               <div class="degree fs-1 pb-1" id="maxTemp-second"></div>
+               <div class="degree fs-4" id="minTemp-second"></div>
+               <div><img src="img/113.webp" alt="" class="w-25" id="icon2"></div>
+             <div class="custom-second-day  pb-4"></div>
+             </div>
+             
+           </div>
+         </div>
+         <div class="col-lg-4">
+           <div class="about-wheather text-center ">
+             <div class="weather-header p-3 rounded-1 ">
+               <div class="day" id="thirdDay"></div>
+             </div>
+             <div class="weather-content p-3 mt-3 rounded-1">
+               <div class="degree fs-1 pb-1" id="maxTemp-third"></div>
+               <div class="degree fs-4" id="minTemp-third"></div>
+               <div><img src="img/113.webp" alt="" class="w-25" id="icon3"></div>
+             <div class="custom-third-day  pb-4"></div>
+             </div>
+             
+           </div>
+         </div>
+        
+       </div>
+    </div>
+   
+
+
+    <video src="img/bg-video.mp4" autoplay muted loop></video>
+  </div>
+  
+ </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

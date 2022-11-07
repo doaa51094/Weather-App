@@ -1,0 +1,110 @@
+#bg-body{
+    font-family: sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    border-radius: 30px;
+    border: 2px solid transparent; 
+    padding: 5px 25px;
+   transition:0.3s ease;
+
+}
+.navbar-nav .nav-link.active {
+    color:#009ad8 ;
+    border: 2px solid #013549;
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+.navbar-nav .nav-link:hover{
+    border: 2px solid #013549; 
+    color:#009ad8 ;
+}
+.home{
+    height: 100%;
+    width: 100%;
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.about-wheather{
+    margin-top: 20px;
+   padding: 0.6rem;
+   
+   
+} 
+ .weather-header{
+    background-color: #009ad8;
+    display: flex;
+    justify-content: center;
+    
+}
+.weather-header.main-header{
+    justify-content:space-between;
+} 
+
+.weather-header{
+    background-color: rgb(23, 33, 48,0.9); 
+    box-shadow: 0 0 15px black;
+    color: white;
+}
+.weather-content{
+    background-color: rgb(16, 27, 46,0.9);  
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+.middle-header{
+    background-color: rgb(17, 22, 32,0.9); 
+}
+.middle-content{
+    background-color: rgb(17, 22, 32,0.9);     
+}
+.input-bg {
+    padding:10px 20px;
+   border: none;
+    background-color: #101b2e;
+    color: white;
+}
+.input-bg:focus{
+    background-color: #101b2e;
+    color: white;
+} 
+.input-group {
+    width: 98%;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
